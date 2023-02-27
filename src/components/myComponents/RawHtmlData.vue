@@ -2,7 +2,7 @@
 export default {
     data(){
         return {
-            title: "FemCoder Málaga P1",
+            title: "FemCoders Málaga P1",
             person:{
                 id: 1,
                 name: 'Adri',
