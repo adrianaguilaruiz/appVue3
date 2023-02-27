@@ -47,7 +47,7 @@ export default {
             />
             <button v-on:click="addAFemCoder()" class="btn btn-primary">+</button>
         </div>
-        <span v-if="persons.length == 0" class="m-3">Please, add a FemCoder</span>
+        <span v-if="femcoders.length == 0" class="m-3">Please, add a FemCoder</span>
         <ul class="m-3">
             <template v-for="(femcoder, key) in femcoders" :key="femcoder.id">
                 <li :id="key">{{ femcoder.id }}: {{ femcoder.person }}</li>

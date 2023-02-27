@@ -2,11 +2,13 @@
 import SingleComponent from '../components/myComponents/SingleComponent.vue';
 import RawHtmlComponent from '../components/myComponents/RawHtmlData.vue';
 import DirectiveVShow from '../components/myComponents/directives/DirectiveVShow.vue';
+import DirectiveVIf from '../components/myComponents/directives/DirectiveVIf.vue'
 import DirectiveVModel from '../components/myComponents/directives/DirectiveVModel.vue';
 import DirectiveVFor from '../components/myComponents/directives/DirectiveVFor.vue';
+import ComputedProps from '../components/myComponents/computed-properties/ComputedProps.vue';
 import ParentComponent from '../components/myComponents/props/ParentComponent.vue';
 
-export default { components: { SingleComponent, RawHtmlComponent, DirectiveVShow, DirectiveVModel, DirectiveVFor, ParentComponent } };
+export default { components: { SingleComponent, RawHtmlComponent, DirectiveVShow, DirectiveVIf, DirectiveVModel, DirectiveVFor, ComputedProps, ParentComponent } };
 </script>
     
 <template>
@@ -20,13 +22,13 @@ export default { components: { SingleComponent, RawHtmlComponent, DirectiveVShow
         -------------------------
         <DirectiveVShow />
         -------------------------
-        <!-- <DirectiveVIf /> -->
+        <DirectiveVIf />
         -------------------------
         <DirectiveVModel />
         -------------------------
         <DirectiveVFor />
         -------------------------
-        <!-- <ComputedProps /> -->
+        <ComputedProps />
         -------------------------
         <ParentComponent />
     </div>
