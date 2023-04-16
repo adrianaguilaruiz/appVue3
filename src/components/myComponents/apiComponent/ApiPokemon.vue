@@ -26,7 +26,6 @@ import axios from 'axios'
             <img class="imgPokemon" :src="pokemonData.sprites.other.dream_world.front_default" alt="Pokemon image">
             <img class="imgPokemon" :src="pokemonData.sprites.other.home.front_default" alt="Pokemon image">
             <img class="imgPokemon" :src="pokemonData.sprites.other.home.front_shiny" alt="Pokemon image">
-            
             <h3>HP: {{ pokemonData.stats[0].base_stat }}</h3>
             <h3>Attack: {{ pokemonData.stats[1].base_stat }}</h3>
             <h3>Defense: {{ pokemonData.stats[2].base_stat }}</h3>
