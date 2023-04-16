@@ -5,10 +5,8 @@ import axios from 'axios'
         data() {
             return {
                 pokemonData: null,
-
             }
         },
-        //lifecycle (option or composition api)
         created() {
             axios.get('https://pokeapi.co/api/v2/pokemon/umbreon').then((result) => {
                 this.pokemonData = result.data
